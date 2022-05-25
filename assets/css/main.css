@@ -1,0 +1,245 @@
+/*
+1em = 16px
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(/assets/files/images/bg-1.png), url(/assets/files/images/bg-2.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-color: #272333;
+}
+
+.btn-turquoise {
+  background-color: #0679a8;
+}
+
+.sidebar {
+  background-color: #302c40;
+  border-radius: 1.4rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.sidebar__image {
+  width: 220px;
+  margin: 0 auto;
+  margin-top: -9rem;
+}
+
+.sidebar__info {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar__title {
+  color: #fff;
+}
+
+.sidebar__badge {
+  color: #fff;
+  font-size: .8rem;
+  background: #272333;
+  display: inline-block;
+  padding: .4rem 1rem;
+  border-radius: 1rem;
+  margin: .5rem 0 1rem;
+}
+
+.sidebar__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar__social-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.sidebar__social-link i {
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.sidebar__social-link:hover i {
+  color: #0679a8;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.sidebar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar__menu-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.sidebar__menu-link {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.sidebar__menu-link::before, .sidebar__menu-link::after {
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background-color: #0679a8;
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.sidebar__menu-link::before {
+  margin-right: 0.6rem;
+  left: -30px;
+}
+
+.sidebar__menu-link::after {
+  margin-left: 0.6rem;
+  right: -30px;
+}
+
+.sidebar__menu-link:hover {
+  color: #fff;
+}
+
+.sidebar__menu-link:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+.sidebar__menu-link:hover::after {
+  right: 0;
+  opacity: 1;
+}
+
+.sidebar__menu-link.active::before, .sidebar__menu-link.active::after {
+  opacity: 1;
+}
+
+.sidebar__menu-link.active::before {
+  left: 0;
+}
+
+.sidebar__menu-link.active::after {
+  right: 0;
+}
+
+.sidebar__btn {
+  color: #fff;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 1rem;
+  padding: 0.6rem 2rem;
+  -webkit-box-shadow: rgba(19, 153, 206, 0.582) 0px 8px 18px -5px, rgba(19, 153, 206, 0.582) 0px 5px 13px -8px;
+          box-shadow: rgba(19, 153, 206, 0.582) 0px 8px 18px -5px, rgba(19, 153, 206, 0.582) 0px 5px 13px -8px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.sidebar__btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #06729e;
+  color: #fff;
+}
+
+.main {
+  padding: 7rem 0;
+}
+
+.main__content {
+  background-color: #302c40;
+  border-radius: 1.4rem;
+  margin-left: 1rem;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,8 @@
+.main{
+    padding: 7rem 0;
+    &__content{
+        background-color: $color-container;
+        border-radius: 1.4rem;
+        margin-left: 1rem;
+    }
+}

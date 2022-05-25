@@ -1,0 +1,19 @@
+// Title Font Bebas 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+// (Stroke kullanılacak)
+
+// Text Font - Poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+// html {
+//     font-size: 62.5%; //1rem = 10px, 10/16 = 62.5%
+// }
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(/assets/files/images/bg-1.png), url(/assets/files/images/bg-2.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-color: $color-bg;
+}
