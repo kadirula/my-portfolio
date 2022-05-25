@@ -68,6 +68,8 @@ body {
   background-repeat: no-repeat;
   background-size: inherit;
   background-color: #272333;
+  color: #fff;
+  line-height: 1.5;
 }
 
 .btn-turquoise {
@@ -129,7 +131,6 @@ body {
 }
 
 .sidebar__social-link:hover i {
-  color: #0679a8;
   -webkit-transform: translateY(-0.3rem);
           transform: translateY(-0.3rem);
 }
@@ -202,6 +203,12 @@ body {
   opacity: 1;
 }
 
+.sidebar__menu-link.active {
+  background: #27233369;
+  padding: 0.4rem 2rem;
+  border-radius: 1.5rem;
+}
+
 .sidebar__menu-link.active::before, .sidebar__menu-link.active::after {
   opacity: 1;
 }
@@ -241,5 +248,38 @@ body {
   background-color: #302c40;
   border-radius: 1.4rem;
   margin-left: 1rem;
+  padding: 2rem 2.5rem;
+}
+
+.section__title {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.4rem;
+  margin-bottom: 3rem;
+}
+
+.section__title--line {
+  position: relative;
+}
+
+.section__title--line::after {
+  content: "";
+  position: absolute;
+  top: 130%;
+  left: 0;
+  width: 100px;
+  height: 5px;
+  border-radius: .4rem;
+  background-color: #0679a8;
+}
+
+.about-text p {
+  color: #fff;
+  font-size: 0.94rem;
+}
+
+.about-text p:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

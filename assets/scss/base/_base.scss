@@ -1,6 +1,8 @@
 // Title Font Bebas 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-// (Stroke kullanılacak)
+//font-family: 'Bebas Neue', cursive;
+
+// (Stroke kullanılacak) 
 
 // Text Font - Poppins
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -16,4 +18,8 @@ body {
     background-repeat: no-repeat;
     background-size: inherit;
     background-color: $color-bg;
+    color: $color-text;
+    line-height: 1.5;
 }
+
+
