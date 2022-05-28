@@ -9,6 +9,10 @@
 }
 
 .section{
+    display: none;
+    &.active{
+        display: block;
+    }
     &__title{
         color: $color-text;
         font-size: 2rem;
@@ -29,6 +33,11 @@
             }
         }
     }
+
+    &__sub-title{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
 }
 
 .about-text{
@@ -39,4 +48,118 @@
             margin-bottom: 1.5rem;
         }
     }
+}
+
+.do-card{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-bg;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    &__info{
+        padding-left: 1rem;
+    }
+    &__text{
+        margin-bottom: 0.4rem;
+        font-weight: 600;
+    }
+    &__desc{
+        color: $color-desc;
+        font-size: 0.9rem;
+    }
+}
+
+.skill-card{
+    background-color: $color-bg;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $color-container;
+        padding: 0.1rem 0.8rem;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 0.7rem;
+    }
+    &__bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: $color-turquoise;
+        width: 0;
+        z-index: 0;
+        transition: width 1.5s;
+    }
+    &__text,
+    &__count{
+        font-size: 0.7rem;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.portfolio{
+    &__filter{
+        display: flex;
+        align-items: center;
+        button{
+            margin: 0 0.4rem;
+            border: 0;
+            background: transparent;
+            color: $color-text;
+            &.active{
+                font-weight: 600;
+                color: $color-turquoise;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 110%;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $color-turquoise;
+                }
+            }
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    &__item{
+        width: 33.3%;
+        height: 250px;
+        padding: 0 0.5rem 3rem;
+        margin-bottom: 2rem;
+    }
+    &__image{
+        border-radius: .7rem;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all .3s;
+            &:hover{
+                transform: scale(1.09);
+            }
+    
+        }
+        
+    }
+    &__title{
+        color: $color-text;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+    
 }

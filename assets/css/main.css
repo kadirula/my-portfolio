@@ -251,6 +251,14 @@ body {
   padding: 2rem 2.5rem;
 }
 
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
 .section__title {
   color: #fff;
   font-size: 2rem;
@@ -274,6 +282,11 @@ body {
   background-color: #0679a8;
 }
 
+.section__sub-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 .about-text p {
   color: #fff;
   font-size: 0.94rem;
@@ -281,5 +294,150 @@ body {
 
 .about-text p:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+
+.do-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #272333;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.do-card__info {
+  padding-left: 1rem;
+}
+
+.do-card__text {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.do-card__desc {
+  color: #DEDDE0;
+  font-size: 0.9rem;
+}
+
+.skill-card {
+  background-color: #272333;
+  margin: 1rem 0;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.skill-card__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #302c40;
+  padding: 0.1rem 0.8rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.7rem;
+}
+
+.skill-card__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #0679a8;
+  width: 0;
+  z-index: 0;
+  -webkit-transition: width 1.5s;
+  transition: width 1.5s;
+}
+
+.skill-card__text, .skill-card__count {
+  font-size: 0.7rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__filter button {
+  margin: 0 0.4rem;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.portfolio__filter button.active {
+  font-weight: 600;
+  color: #0679a8;
+  position: relative;
+}
+
+.portfolio__filter button.active::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0679a8;
+}
+
+.portfolio__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.portfolio__item {
+  width: 33.3%;
+  height: 250px;
+  padding: 0 0.5rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio__image {
+  border-radius: .7rem;
+  overflow: hidden;
+}
+
+.portfolio__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.portfolio__image img:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.portfolio__title {
+  color: #fff;
+  margin-top: 1rem;
+  display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */
