@@ -440,4 +440,74 @@ body {
   margin-top: 1rem;
   display: inline-block;
 }
+
+.timeline {
+  padding: 2rem 0;
+}
+
+.timeline__item {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  border-left: 2px solid rgba(222, 221, 224, 0.3);
+}
+
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  top: 0;
+  width: 13px;
+  height: 13px;
+  background-color: #0679a8;
+  border-radius: 50%;
+}
+
+.timeline__title {
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+}
+
+.timeline__date {
+  color: #DEDDE0;
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+  display: inline-block;
+}
+
+.timeline__desc {
+  color: #DEDDE0;
+  font-size: 0.9rem;
+}
+
+.profile-box {
+  text-align: center;
+  background-color: #272333;
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.profile-box__image {
+  max-width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #272333;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.profile-box__image img {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.profile-box__image:hover img {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.profile-box__info {
+  margin-top: 1rem;
+}
 /*# sourceMappingURL=main.css.map */
