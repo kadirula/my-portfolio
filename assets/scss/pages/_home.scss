@@ -200,26 +200,3 @@
     }
 }
 
-.profile-box{
-    text-align: center;
-    background-color: $color-bg;
-    border-radius: 1.5rem;
-    padding: 1rem;
-    &__image{
-        max-width: 200px;
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: $color-bg;
-        margin: 0 auto;
-        cursor: pointer;
-        img{
-            transition: all .3s;
-        }
-        &:hover img{
-            transform: scale(1.04);
-        }
-    }
-    &__info{
-        margin-top: 1rem;
-    }
-}

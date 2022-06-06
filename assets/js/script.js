@@ -29,6 +29,26 @@ sidebarMenuLink.forEach(item => {
 
         addElementClass(sectionElement, 'active');
 
+        // init Isotope elements
+        var box = $(".portfolio__wrapper").isotope({
+            itemSelector: ".portfolio__item"
+        });
+
+        // filter functions
+        // bind filter button click
+        $(".portfolio__filter").on("click", "button", function () {
+            $(".portfolio__filter").find(".active").removeClass("active");
+            $(this).addClass("active");
+
+            var filterValue = $(this).attr("data-type");
+
+            if (filterValue !== "*") {
+                filterValue = '[data-type="' + filterValue + '"]';
+            }
+
+            box.isotope({ filter: filterValue });
+        });
+
     })
 });
 
@@ -36,20 +56,23 @@ sidebarMenuLink.forEach(item => {
 /////////////////////////////// PORTFOLIO FILTER - ISOTOPE /////////////////////////////////////
 
 // init Isotope elements
-var $box = $(".portfolio__wrapper").isotope({
+var box = $(".portfolio__wrapper").isotope({
     itemSelector: ".portfolio__item"
 });
 
 // filter functions
 // bind filter button click
 $(".portfolio__filter").on("click", "button", function () {
-    var filterValue = $(this).attr("data-type");
     $(".portfolio__filter").find(".active").removeClass("active");
     $(this).addClass("active");
+
+    var filterValue = $(this).attr("data-type");
+
     if (filterValue !== "*") {
         filterValue = '[data-type="' + filterValue + '"]';
     }
-    $box.isotope({ filter: filterValue });
+
+    box.isotope({ filter: filterValue });
 });
 
 
