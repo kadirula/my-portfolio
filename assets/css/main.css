@@ -83,6 +83,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .sidebar {
+    margin: 0 1rem 2rem;
+  }
+}
+
 .sidebar__image {
   width: 220px;
   margin: 0 auto;
@@ -240,8 +246,21 @@ body {
   color: #fff;
 }
 
+@media only screen and (min-width: 37.6em) and (max-width: 56.2em) {
+  .sidebar__btn {
+    padding: 0.4rem 1.3rem;
+  }
+}
+
 .main {
   padding: 7rem 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main {
+    padding: 7rem 0rem 3rem;
+    overflow: hidden;
+  }
 }
 
 .main__content {
@@ -249,6 +268,13 @@ body {
   border-radius: 1.4rem;
   margin-left: 1rem;
   padding: 2rem 2.5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .main__content {
+    padding: 2rem 1rem;
+    margin: 0 1rem 2rem;
+  }
 }
 
 .section {
@@ -309,8 +335,46 @@ body {
   border-radius: 1rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .do-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 37.6em) and (max-width: 56.2em) {
+  .do-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .do-card__info {
   padding-left: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .do-card__info {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 37.6em) and (max-width: 56.2em) {
+  .do-card__info {
+    text-align: center;
+    margin-top: 1rem;
+  }
 }
 
 .do-card__text {
@@ -376,11 +440,24 @@ body {
           align-items: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .portfolio__filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .portfolio__filter button {
   margin: 0 0.4rem;
   border: 0;
   background: transparent;
   color: #fff;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .portfolio__filter button {
+    margin: .5rem .5rem;
+  }
 }
 
 .portfolio__filter button.active {
@@ -414,6 +491,12 @@ body {
   height: 250px;
   padding: 0 0.5rem 3rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .portfolio__item {
+    width: 50%;
+  }
 }
 
 .portfolio__image {
@@ -469,80 +552,24 @@ body {
   position: relative;
 }
 
+.timeline__subtitle {
+  color: #DEDDE0;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  display: block;
+  font-weight: bold;
+}
+
 .timeline__date {
   color: #DEDDE0;
   font-size: 0.9rem;
   margin: 0.4rem 0;
   display: inline-block;
+  font-weight: bold;
 }
 
 .timeline__desc {
   color: #DEDDE0;
   font-size: 0.9rem;
-}
-
-.profile-box {
-  text-align: center;
-  background-color: #272333;
-  border-radius: 1.5rem;
-  padding: 1rem;
-}
-
-.profile-box__image {
-  max-width: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  background-color: #272333;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.profile-box__image img {
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-.profile-box__image:hover img {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-}
-
-.profile-box__info {
-  margin-top: 1rem;
-}
-
-.profile-box__title {
-  font-size: 1.3rem;
-}
-
-.profile-box__desc {
-  font-size: 0.9rem;
-  color: #DEDDE0;
-  background-color: #302c40;
-  display: inline-block;
-  padding: 0.1rem 1rem;
-  margin-top: 0.5rem;
-  border-radius: 0.6rem;
-}
-
-.profile-box__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 1rem 0;
-}
-
-.profile-box__social li {
-  margin: 0 .5rem;
-}
-
-.profile-box__social li a {
-  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

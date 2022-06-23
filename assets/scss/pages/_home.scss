@@ -1,10 +1,19 @@
 .main{
     padding: 7rem 0;
+    @include mediaQuery(phone){
+        padding: 7rem 0rem 3rem;
+        overflow: hidden;
+    }
+    
     &__content{
         background-color: $color-container;
         border-radius: 1.4rem;
         margin-left: 1rem;
         padding: 2rem 2.5rem;
+        @include mediaQuery(phone){
+            padding: 2rem 1rem;
+            margin: 0 1rem 2rem;
+        }
     }
 }
 
@@ -57,8 +66,24 @@
     margin: 1rem 0;
     padding: 1rem 1rem;
     border-radius: 1rem;
+    @include mediaQuery(phone){
+        flex-direction: column;
+        align-items: center;
+    }
+    @include mediaQuery(tablet-mini){
+        flex-direction: column;
+        align-items: center;
+    }
     &__info{
         padding-left: 1rem;
+        @include mediaQuery(phone){
+            text-align: center;
+            margin-top: 1rem;
+        }
+        @include mediaQuery(tablet-mini){
+            text-align: center;
+            margin-top: 1rem;
+        }
     }
     &__text{
         margin-bottom: 0.4rem;
@@ -109,11 +134,17 @@
     &__filter{
         display: flex;
         align-items: center;
+        @include mediaQuery(phone){
+            flex-wrap: wrap;
+        }
         button{
             margin: 0 0.4rem;
             border: 0;
             background: transparent;
             color: $color-text;
+            @include mediaQuery(phone){
+                margin: .5rem .5rem;
+            }
             &.active{
                 font-weight: 600;
                 color: $color-turquoise;
@@ -140,6 +171,9 @@
         height: 250px;
         padding: 0 0.5rem 3rem;
         margin-bottom: 2rem;
+        @include mediaQuery(phone){
+            width: 50%;
+        }
     }
     &__image{
         border-radius: .7rem;
@@ -188,11 +222,19 @@
         position: relative;
         
     }
+    &__subtitle{
+        color: $color-desc;
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+        display: block;
+        font-weight: bold;
+    }
     &__date{
         color: $color-desc;
         font-size: 0.9rem;
         margin: 0.4rem 0;
         display: inline-block;
+        font-weight: bold;
     }
     &__desc{
         color: $color-desc;

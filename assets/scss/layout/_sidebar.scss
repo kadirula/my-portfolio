@@ -3,6 +3,9 @@
     border-radius: 1.4rem;
     padding: 3rem 0;
     text-align: center;
+    @include mediaQuery(phone){
+        margin: 0 1rem 2rem;
+    }
     &__image{
         width: 220px;
         margin: 0 auto;
@@ -113,6 +116,9 @@
             box-shadow: none;
             background-color: darken($color-turquoise, 2%);
             color: $color-text;
+        }
+        @include mediaQuery(tablet-mini){
+            padding: 0.4rem 1.3rem;
         }
     }
 }
