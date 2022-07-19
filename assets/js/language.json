@@ -1,0 +1,54 @@
+{
+    "languages": {
+        "en": {
+            "strings": {
+                "sidebar-about": "About",
+                "sidebar-portfolio": "Projects",
+                "sidebar-resume": "Resume",
+                "sidebar-download-cv": "Download CV",
+                "about-section-title": "About Me",
+                "portfolio-section-title": "My Projects",
+                "resume-section-title": "Resume",
+                "about-desc-1": "Hello, I'm Kadir. I am developing myself on HTML5, CSS3 and JavaScript technologies. I have been dealing with web software for over 6 years. With the experience I have gained, I have the necessary knowledge and skills to make your projects successful.",
+                "about-desc-2": "Those who want to work with me and benefit from the services I provide can contact me immediately using my social media channels.",
+                "about-doing": "What Am I Doing",
+                "about-technology": "Technologies",
+                "web-design": "Web Design",
+                "web-development": "Web Development",
+                "responsive-design": "Responsive Design",
+                "sustainable-coding": "Sustainable Coding",
+                "all-text":"All",
+                "ui-text":"UI",
+                "javascript-text":"Javascript",
+                "react-text":"React",
+                "education-text": "Education",
+                "experience-text": "Experience"
+            }
+        },
+        "tr": {
+            "strings": {
+                "sidebar-about": "Hakkımda",
+                "sidebar-portfolio": "Projelerim",
+                "sidebar-resume": "Özgeçmişim",
+                "sidebar-download-cv": "CV İndir",
+                "about-section-title": "Hakkımda",
+                "portfolio-section-title": "Projelerim",
+                "resume-section-title": "Özgeçmişim",
+                "about-desc-1": "Merhaba ben Kadir. HTML5, CSS3 ve JavaScript teknolojileri üzerine kendimi geliştirmekteyim. 6 yılı aşkın bir süredir web yazılımı ile ilgilenmekteyim. Elde ettiğim deneyim ile projelerinizi başarıya ulaştıracak gerekli bilgi ve becerilere sahibim.",
+                "about-desc-2": "Benimle çalışmak isteyen ve verdiğim hizmetlerden yararlanmak isteyenler hemen sosyal medya kanallarımı kullanarak benimle iletişime geçebilirler.",
+                "about-doing": "Ben Ne Yapıyorum",
+                "about-technology": "Teknolojiler",
+                "web-design": "Web Dizayn",
+                "web-development": "Web Geliştirme",
+                "responsive-design": "Responsive Tasarım",
+                "sustainable-coding": "Sürdürülebilir Kodlama",
+                "all-text":"Hepsi",
+                "ui-text":"UI",
+                "javascript-text":"Javascript",
+                "react-text":"React",
+                "education-text": "Eğitim",
+                "experience-text": "Deneyim"
+            }
+        }
+    }
+}

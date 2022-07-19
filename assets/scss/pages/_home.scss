@@ -167,9 +167,9 @@
         padding-top: 2rem;
     }
     &__item{
-        width: 33.3%;
-        height: 250px;
-        padding: 0 0.5rem 3rem;
+        width: 50%;
+        max-height: 350px;
+        padding: 0 0.5rem 0;
         margin-bottom: 2rem;
         @include mediaQuery(phone){
             width: 50%;
@@ -179,9 +179,9 @@
         border-radius: .7rem;
         overflow: hidden;
         img{
-            height: 100%;
             width: 100%;
-            object-fit: cover;
+            // height: 100%;
+            // object-fit: cover;
             transition: all .3s;
             &:hover{
                 transform: scale(1.09);
@@ -239,6 +239,32 @@
     &__desc{
         color: $color-desc;
         font-size: 0.9rem;
+    }
+}
+
+.language{
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__item{
+        margin-bottom: 1rem;
+        background-color: $color-container;
+        padding: 0.5rem 1rem;
+        color: $color-text;
+        font-weight: 600;
+        border-radius: 0.3rem;
+        transition: all .3s;
+        &:hover{
+            background-color: $color-turquoise;
+            color: $color-desc;
+        }
+        &.active{
+            background-color: $color-turquoise;
+            color: $color-desc;
+        }
     }
 }
 

@@ -487,9 +487,9 @@ body {
 }
 
 .portfolio__item {
-  width: 33.3%;
-  height: 250px;
-  padding: 0 0.5rem 3rem;
+  width: 50%;
+  max-height: 350px;
+  padding: 0 0.5rem 0;
   margin-bottom: 2rem;
 }
 
@@ -505,10 +505,7 @@ body {
 }
 
 .portfolio__image img {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -571,5 +568,42 @@ body {
 .timeline__desc {
   color: #DEDDE0;
   font-size: 0.9rem;
+}
+
+.language {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.language__item {
+  margin-bottom: 1rem;
+  background-color: #302c40;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.language__item:hover {
+  background-color: #0679a8;
+  color: #DEDDE0;
+}
+
+.language__item.active {
+  background-color: #0679a8;
+  color: #DEDDE0;
 }
 /*# sourceMappingURL=main.css.map */
